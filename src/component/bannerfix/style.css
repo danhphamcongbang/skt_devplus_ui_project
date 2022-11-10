@@ -114,6 +114,7 @@ h6 {
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-bottom: 100px;
 }
 
 .about-section__container {
@@ -217,4 +218,101 @@ h6 {
    font-size: 18px;
    color: #505050;
    line-height: 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+   .main-banner__container {
+      max-width: 1270px;
+   }
+   .about-section {
+      --about-section-container-max-width: 1270px;
+   }
+}
+@media (min-width: 1400px) {
+   .main-banner__container {
+      max-width: 1320px;
+   }
+   .about-section {
+      --about-section-container-max-width: 1320px;
+   }
+}
+@media (min-width: 1200px) {
+   .main-banner__container {
+      max-width: 1140px;
+   }
+   .about-section {
+      --about-section-container-max-width: 1140px;
+   }
+}
+
+@media only screen and (max-width: 1366px) {
+   .main-banner__container {
+      max-width: 1170px;
+   }
+   .about-section {
+      --about-section-container-max-width: 1170px;
+   }
+}
+@media only screen and (max-width: 1199px) {
+   .main-banner__container {
+      max-width: 960px;
+   }
+   .about-section {
+      --about-section-container-max-width: 960px;
+   }
+   .content-box__title {
+      font-size: 45px;
+      line-height: 54px;
+   }
+}
+@media only screen and (max-width: 991px) {
+   .about-section {
+      margin-bottom: 70px;
+   }
+   .main-banner__container {
+      max-width: 720px;
+   }
+   .about-section {
+      --about-section-container-max-width: 720px;
+   }
+   .content-box__title {
+      font-size: 40px;
+      line-height: 48px;
+   }
+   .about-section__row {
+      display: block;
+      flex-direction: column;
+   }
+   .row__road {
+      width: 100%;
+   }
+   .road__box {
+      margin-top: 70px;
+   }
+   .row__about-devplus {
+      width: 100%;
+      padding: 0 15px;
+   }
+   .about-devplus__box {
+      margin-top: 70px;
+   }
+   .road__item {
+      padding: 30px;
+   }
+   .about-devplus__main-content {
+      font-size: 30px;
+      line-height: 36px;
+   }
+}
+@media only screen and (max-width: 767px) {
+   .main-banner__container {
+      max-width: 540px;
+   }
+   .content-box__title {
+      font-size: 35px;
+      line-height: 42px;
+   }
+   .about-section {
+      --about-section-container-max-width: 540px;
+   }
 }
