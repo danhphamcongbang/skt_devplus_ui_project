@@ -28,8 +28,6 @@ body {
    -webkit-text-size-adjust: 100%;
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
 }
 img,
 picture,
@@ -295,83 +293,110 @@ div.sticky {
 
 /* II. ------------------HEADER SECTION END------------------ */
 /*  ------------------BANNER SECTION------------------ */
-.banner.style {
-   padding: 125px 0 425px;
+
+.main-banner-section {
+   width: 100%;
+   font-family: "Rubik", sans-serif;
+}
+
+.main-banner__content {
+   width: 100%;
+   padding: 125px 0 425px 0;
    background: url(../../../assets/images/Devplus_missions.png);
    background-size: cover;
    background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.banner.style .banner-content {
+.main-banner__container {
+   width: 100%;
+   max-width: 1270px;
+   padding: 0 15px;
+}
+.main-banner__content-box {
    max-width: 750px;
    margin: 0 auto;
 }
-.banner.style .banner-content .banner-title {
-   font-size: 57px;
-   margin-bottom: 23px;
-}
-.banner.style .banner-content .desc {
-   font-size: 21px;
-   line-height: 30px;
-   font-family: "Rubik", sans-serif;
-   color: #505050;
-}
-.capitalize {
-   text-transform: capitalize !important;
-}
-h1.banner-title {
-   font-size: 70px;
-   font-weight: 700;
+.content-box__title-banner {
    font-family: "Nunito", sans-serif;
-   color: #111111;
-   margin: 0 0 26px;
+   font-size: 55px;
+   margin-bottom: 16px;
+   text-transform: capitalize;
+   font-weight: 700;
    line-height: 1.2;
+   text-align: center;
 }
-
-.readon {
-   outline: none;
-   padding: 12px 40px;
-   border: 1px solid #226fb7;
+.content-box__content-banner {
+   color: #505050;
+   font-size: 20px;
+   line-height: 30px;
+   margin-bottom: 35px;
+   text-align: center;
+   font-weight: 400;
+   visibility: visible;
+   animation-duration: 3000ms;
+   animation-delay: 300ms;
+   animation-name: fadeInRight;
+}
+.wow {
+   visibility: visible;
+   animation-duration: 3000ms;
+   animation-delay: 300ms;
+   animation-name: fadeInRight;
+}
+.content-box__more-btn {
+   text-align: center;
+}
+.more-btn {
+   border: 1px solid #ff5421;
+   color: #ffffff;
+   background: #ff5421;
+   padding: 16px 58px;
    border-radius: 30px;
    display: inline-block;
    text-transform: uppercase;
    font-size: 16px;
    font-family: "Rubik", sans-serif;
    font-weight: 700;
-   color: #111111;
-   background: #f3f8f9;
-}
-.readon.banner-style {
-   color: #ffffff;
-   background: #226fb7;
-   padding: 16px 58px;
-}
-.readon.banner-style-custom {
-   border: 1px solid #ff5421;
-   color: #ffffff;
-   background: #ff5421;
-   padding: 16px 58px;
-}
-.readon.banner-style-custom:hover {
-   background: #ff914d;
-}
-.readon.banner-style:hover {
-   background: #1e95ba;
-}
-a.banner-style-custom {
-   color: #226fb7;
-   transition: all 0.3s ease;
-   text-decoration: none !important;
-   outline: none !important;
-}
-.banner-btn {
-   margin: 30px;
-}
-.about.style1 .notice-bord.style1 {
-   margin-top: -60px;
-   padding: -4px 30px 0px;
+   text-decoration: none;
+   line-height: 26px;
 }
 
-.about.style1 .notice-bord.style1 .title-2 {
+/* about section */
+
+.about-section {
+   width: 100%;
+   font-family: "Rubik", sans-serif;
+   --about-section-container-max-width: 1270px;
+   --about-section-container-width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 100px;
+}
+
+.about-section__container {
+   width: var(--about-section-container-width);
+   max-width: var(--about-section-container-max-width);
+   display: flex;
+}
+.about-section__row {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: row-reverse;
+}
+.row__road {
+   width: calc(var(--about-section-container-max-width) / 3);
+   position: relative;
+   padding: 0 15px;
+}
+.road__box {
+   margin-top: -60px;
+}
+.road__title {
+   font-family: "Nunito", sans-serif;
    background: #226fb7;
    font-size: 20px;
    text-transform: uppercase;
@@ -380,113 +405,78 @@ a.banner-style-custom {
    font-weight: 600;
    color: #ffffff;
    margin-bottom: 10px;
+   line-height: 24px;
 }
-.about.style1 .notice-bord.style1 li {
+.road__list-items {
+   list-style: none;
+}
+.road__item {
    position: relative;
    background: #e7f4f6;
-   margin-bottom: 19px;
+   margin-bottom: 12px;
    border-radius: 3px;
-   padding: 16px;
-   padding-left: 0 !important;
+   padding: 20px;
    overflow: hidden;
+   display: flex;
 }
-.about.style1 .notice-bord.style1 li .date {
-   position: absolute;
-   left: 20px;
-   top: 50%;
-   transform: translateY(-50%);
+.road-item__date {
+   font-family: "Nunito", sans-serif;
+   font-size: 22px;
+   position: relative;
    text-align: center;
    color: #226fb7;
    border-right: 1px solid #226fb7;
    padding-right: 10px;
    font-weight: 600;
+   height: 26px;
    width: 60px;
+   transform: translateY(-2px);
 }
-.about.style1 .notice-bord.style1 li .date span {
-   font-size: 22px;
-   display: block;
-}
-.about.style1 .about-part .desc {
-   font-size: 18px;
-   line-height: 30px;
-   font-weight: 500;
-
+.road-item__desc {
+   font-size: 15px;
+   font-family: "Rubik", sans-serif;
    color: #505050;
-}
-.about.style1 .notice-bord.style1 li .desc {
-   padding-left: 95px;
+   padding-left: 15px;
    font-weight: 500;
-   font-size: 18px;
-   color: #505050;
-}
-h2.about.title-2 {
-   font-size: 26px;
-   font-weight: 700;
-   color: #111111;
-   margin: 0 0 26px;
-   line-height: 1.2;
-}
-.col-lg-4.order-last {
-   padding: 0px 30px 30px;
-}
-.col-lg-8.about-dev {
-   padding: 0px 30px 60px;
+   transform: translateY(2px);
 }
 
-@media only screen and (max-width: 992px) {
-   .row.about-row {
-      display: flex;
-      flex-direction: column-reverse;
-   }
-}
+/* about section */
 
-@media only screen and (max-width: 992px) {
-   .about.style1 .about-part {
-      margin-top: 20px !important;
-      padding: 0px 30px 0px;
-   }
+.row__about-devplus {
+   width: calc(var(--about-section-container-max-width) * 2 / 3);
+   position: relative;
+   padding: 0 50px 0 15px;
 }
-
-@media only screen and (max-width: 991px) {
-   .banner.style .banner-content .banner-title {
-      font-size: 47px;
-   }
-}
-@media only screen and (max-width: 767px) {
-   .banner.style .banner-content .banner-title {
-      font-size: 35px;
-   }
-}
-
-.about.style1 .about-part {
-   background: #e7f4f6;
-   padding: 90px 80px 70px;
-   border-radius: 5px;
+.about-devplus__box {
    margin-top: -60px;
+   padding: 60px 60px 70px 60px;
+   background: #e7f4f6;
+   border-radius: 5px;
 }
-.sec-title .sub-title.primary {
+.about-devplus__content {
+   margin-bottom: 40px;
+}
+.about-devplus__title {
    color: #226fb7;
-}
-.sec-title .sub-title {
    font-size: 18px;
    line-height: 28px;
    font-weight: 500;
    text-transform: uppercase;
    margin-bottom: 8px;
 }
-h3.about.title-h3 {
+.about-devplus__main-content {
    font-size: 36px;
-   font-weight: 700;
    font-family: "Nunito", sans-serif;
+   font-weight: 700;
+   margin-bottom: 0.5rem;
    color: #111111;
-   margin: 0 0 26px;
-   line-height: 1.2;
+   line-height: 43.2px;
 }
-
-ul.item {
-   list-style: outside none none;
-   margin: 0;
-   padding: 0;
+.about-devplus__desc {
+   font-size: 18px;
+   color: #505050;
+   line-height: 30px;
 }
 
 /*  ------------------BANNER SECTION END------------------ */
@@ -558,7 +548,7 @@ html body {
    align-items: center;
 }
 
-.fadeInUp {
+.row-body__fade-in {
    width: 423px;
    height: 145px;
    padding: 0 15px;

@@ -116,3 +116,6 @@ $('.owl-carousel').owlCarousel({
    }
    }
  });
+
+ //wow INIT
+ new WOW().init();
