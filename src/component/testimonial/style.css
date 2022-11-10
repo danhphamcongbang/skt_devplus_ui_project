@@ -1,0 +1,257 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+::selection {
+    background: #226FB7;
+    text-shadow: none;
+    color: #ffffff;
+}
+.campus-testimonial__title{
+    font-family: 'Nunito', sans-serif;
+    color: #111111;
+    margin: 0 0 26px;
+    line-height: 1.2;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.campus-testimonial{
+    font-size: 15px;
+    color: #505050;
+    font-family: 'Rubik', sans-serif;
+    vertical-align: baseline;
+    line-height: 26px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+.campus-testimonial{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.campus-testimonial{
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+.campus-testimonial__container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1270px;
+}
+.campus-testimonial__sec-title{
+    margin-bottom: 50px;
+    text-align: center!important;
+}
+.campus-testimonial__title{
+    margin-bottom: 0!important;
+}
+.campus-testimonial .owl-stage-outer{
+    padding: 10px;
+    margin: -10px;
+}
+
+.owl-item__testi-item{
+    margin: 0px 10px;
+}
+.campus-testimonial .owl-item__testi-item .owl-item__author-desc {
+    padding: 70px 15px;
+    background-color: #f3f8f9;
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+}
+.campus-testimonial .owl-item__testi-item .owl-item__author-desc .owl-item__desc {
+    text-align: center;
+    position: relative;
+    color: #505050;
+    padding: 80px 22px 30px;
+    font-size: 23px;
+    line-height: 33px;
+    font-weight: 500;
+    font-style: italic;
+}
+.campus-testimonial .owl-item__testi-item .owl-item__author-desc .owl-item__desc .owl-item__quote {
+    width: 66px;
+    top: -13px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.owl-carousel .owl-item img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.campus-testimonial .owl-item__testi-item .owl-item__author-desc .owl-item__author-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px;
+}
+
+.campus-testimonial .owl-item__testi-item .owl-item__author-desc .owl-item__author-img img {
+    width: auto;
+    border-radius: 50%;
+}
+.campus-testimonial .owl-item__testi-item .owl-item__author-part {
+    text-align: center;
+    padding-top: 45px;
+}
+.campus-testimonial .owl-item__testi-item .owl-item__author-part .author-part__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #226FB7;
+    display: block;
+}
+.author-part__names {
+    color: #226FB7;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    outline: none !important;
+}
+.campus-testimonial .owl-item__testi-item .owl-item__author-part .author-part__designation {
+    font-size: 16px;
+    color: #111111;
+}.campus-testimonial .owl-dots{
+    text-align: center;
+    margin-top: 47px;
+}
+.rs-carousel .owl-dots {
+    margin: 40px auto 0;
+    line-height: 15px;
+    display: block;
+}
+
+.campus-testimonial .owl-dots .owl-dot:hover, .campus-testimonial .owl-dots .owl-dot.active {
+    background: #226FB7;
+    opacity: 1;
+}
+.campus-testimonial .owl-dots .owl-dot {
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 3px 0;
+    border-radius: 30px;
+    background: #226FB7;
+    border: none;
+}
+.rs-carousel .owl-dots .owl-dot:hover {
+    background: #226FB7;
+}
+.rs-carousel .owl-dots .active {
+    background: #226FB7;
+    opacity: 1;
+}
+
+.rs-carousel .owl-dots .owl-dot {
+    width: 30px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 3px 0;
+    border-radius: 30px;
+    border: 1px solid #226FB7;
+    background: transparent;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.campus-testimonial .owl-dots .owl-dot {
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 6px;
+    padding: 3px 0;
+    border-radius: 30px;
+    background: #226FB7;
+    border: none;
+}
+
+.owl-nav{
+    display: none !important;
+}
+
+.test_body{
+    height: 1000px;
+    width: 100%;
+}
+
+@media only screen and (min-width:1440px) {
+    .campus-testimonial__container {
+        max-width: 1270px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width:1439px) {
+    .campus-testimonial__container {
+        max-width: 1320px;
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1399px) {
+    .campus-testimonial__container{
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (minx-width: 992px)and (max-width:1119px) {
+    .campus-testimonial__container{
+        max-width: 960px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .campus-testimonial__container{
+        max-width: 720px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width:767px) {
+    .campus-testimonial__container{
+        max-width: 540px;
+    }
+}
+
