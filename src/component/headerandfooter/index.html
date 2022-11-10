@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>
+         [Developing...]Dev+ Mission is support the early stage developer go
+         through the right career path
+      </title>
+      <link
+         rel="shortcut icon"
+         type="image/x-icon"
+         href="./asset/img/logo_loading.png"
+      />
+      <!--------------------Header import--------------------->
+      <!-- jquery 2.1.3 import -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <!-- magnific-popup import -->
+      <link rel="stylesheet" href="./asset/css/magnific-popup.css" />
+      <script src="./asset/js/jquery.magnific-popup.min.js"></script>
+      <!-- header css  -->
+      <link rel="stylesheet" href="./style.css" />
+      <link rel="stylesheet" href="./asset/css/animation.css" />
+      <!-- media css -->
+      <link rel="stylesheet" href="./asset/css/mediaHandle.css" />
+      <!-- google fonts Montserrat -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Rubik:wght@300;400;600;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!--------------------Footer import--------------------->
+      <!-- google fonts Nunito & Roboto & Rubik -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+
+   <body id="main-body">
+      <!-- Header Section -->
+      <div class="menu-header-section">
+         <div id="header-navbar" class="menu-header-area">
+            <div class="menu-header-container">
+               <div class="menu-sidebox">
+                  <div class="logo-container">
+                     <img
+                        class="logo-img"
+                        src="https://devplus.edu.vn/assets/images/devplus/Artboard_2.png"
+                        alt="logo-img"
+                     />
+                  </div>
+                  <div id="menu-scroll-point" class="check-scroll-point"></div>
+               </div>
+               <div class="area-main-menu">
+                  <div class="main-menu">
+                     <div class="main-menu__item home-btn">
+                        <a class="main-menu__content">HOME</a>
+                     </div>
+                     <div class="main-menu__item">
+                        <a class="main-menu__content">ABOUT DEVPLUS</a>
+                     </div>
+                     <div class="main-menu__item had-dropdown">
+                        <a class="main-menu__content main-menu__content--after"
+                           >OUR PROGRAMME</a
+                        >
+                        <div class="sub-menu-our-programme">
+                           <div class="sub-menu-our-programme__btn">
+                              <a
+                                 class="sub-menu-our-programme__content"
+                                 href="one-plus-campus/"
+                                 >One plus campus</a
+                              >
+                           </div>
+                           <div class="sub-menu-our-programme__btn">
+                              <a
+                                 class="sub-menu-our-programme__content"
+                                 href="two-plus-campus/"
+                                 >Two plus campus</a
+                              >
+                           </div>
+                           <div class="sub-menu-our-programme__btn">
+                              <a class="sub-menu-our-programme__content"
+                                 >Three plus campus</a
+                              >
+                           </div>
+                        </div>
+                     </div>
+                     <div class="main-menu__item">
+                        <a class="main-menu__content">DEVPLUS ACTIVITIES</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="menu-sidebox menu-side-right">
+                  <div class="expand-menu">
+                     <div class="expand-menu-item" onclick="showMenu()">
+                        <span class="expand-menu-item-line"></span>
+                        <span class="expand-menu-item-line"></span>
+                        <span class="expand-menu-item-line"></span>
+                     </div>
+                  </div>
+                  <div class="expand-menu-mobile" onclick="showMenuMobile()">
+                     <div
+                        id="menu-scroll-point"
+                        class="expand-menu-item-mobile"
+                     >
+                        <span class="expand-menu-item-line-mobile"></span>
+                        <span class="expand-menu-item-line-mobile"></span>
+                        <span class="expand-menu-item-line-mobile"></span>
+                     </div>
+                  </div>
+               </div>
+               <div id="sub-menu-mobile" class="menu-mobile-container">
+                  <ul class="nav-menu-mobile">
+                     <li class="menu-mobile-item">
+                        <a
+                           class="menu-mobile-item-pointer menu-mobile-item-pointer--home"
+                           >Home</a
+                        >
+                     </li>
+                     <li class="menu-mobile-item">
+                        <a class="menu-mobile-item-pointer">About Devplus</a>
+                     </li>
+
+                     <li
+                        class="menu-mobile-item menu-mobile-item--had-children"
+                     >
+                        <a class="menu-mobile-item-pointer">Our programme</a>
+                        <ul
+                           id="sub-menu-mobile-our-programme"
+                           class="sub-menu-mobile"
+                        >
+                           <li>
+                              <a
+                                 class="menu-mobile-item-pointer__sub-item"
+                                 href="one-plus-campus/"
+                                 >One plus campus</a
+                              >
+                           </li>
+                           <li>
+                              <a
+                                 class="menu-mobile-item-pointer__sub-item"
+                                 href="two-plus-campus/"
+                                 >Two plus campus</a
+                              >
+                           </li>
+                           <li>
+                              <a class="menu-mobile-item-pointer__sub-item"
+                                 >Three plus campus</a
+                              >
+                           </li>
+                           <div
+                              class="sub-menu-close"
+                              onclick="dropSubMenuMobile()"
+                           >
+                              <i
+                                 class="fa fa-times icon-close-menu-mobile"
+                                 aria-hidden="true"
+                              ></i
+                              >Close
+                           </div>
+                        </ul>
+                        <span
+                           class="rs-menu-parent-mobile"
+                           onclick="dropSubMenuMobile()"
+                           ><i class="fa fa-angle-down" aria-hidden="true"></i
+                        ></span>
+                     </li>
+                     <li class="menu-mobile-item">
+                        <a class="menu-mobile-item-pointer"
+                           >Devplus Activities</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- right navbar -->
+         <nav id="right-navbar" class="right-navbar">
+            <div onclick="hideMenu()" class="right-navbar__close-btn">
+               <div id="right-navbar__close-icon">
+                  <a class="close-button" href=""></a>
+               </div>
+            </div>
+
+            <div class="right-navbar__logo">
+               <img
+                  class="logo__img"
+                  src="https://devplus.edu.vn/assets/images/Artboard_2.png"
+                  alt="logo"
+               />
+            </div>
+            <div class="right-navbar-text">
+               <p class="right-navbar-text__content">
+                  Devplus's mission is filling the gap between school and
+                  corporate, reduce in-house training cost and effort for IT
+                  companies.
+               </p>
+            </div>
+
+            <div class="right-navbar__gallery">
+               <div class="gallery_img-outside-box">
+                  <div class="gallery__img-box">
+                     <a
+                        class="gallery__image-popup"
+                        href="https://devplus.edu.vn/assets/images/devplus/1.png"
+                     >
+                        <img
+                           class="gallery__image"
+                           src="https://devplus.edu.vn/assets/images/devplus/1.png"
+                           alt=""
+                        />
+                     </a>
+                  </div>
+               </div>
+
+               <div class="gallery_img-outside-box">
+                  <div class="gallery__img-box">
+                     <a
+                        class="gallery__image-popup"
+                        href="https://devplus.edu.vn/assets/images/devplus/2.png"
+                     >
+                        <img
+                           class="gallery__image"
+                           src="https://devplus.edu.vn/assets/images/devplus/2.png"
+                           alt=""
+                        />
+                     </a>
+                  </div>
+               </div>
+
+               <div class="gallery_img-outside-box">
+                  <div class="gallery__img-box">
+                     <a
+                        class="gallery__image-popup"
+                        href="https://devplus.edu.vn/assets/images/devplus/3.png"
+                     >
+                        <img
+                           class="gallery__image"
+                           src="https://devplus.edu.vn/assets/images/devplus/3.png"
+                           alt=""
+                        />
+                     </a>
+                  </div>
+               </div>
+
+               <div class="gallery_img-outside-box">
+                  <div class="gallery__img-box">
+                     <a
+                        class="gallery__image-popup"
+                        href="https://devplus.edu.vn/assets/images/devplus/4.png"
+                     >
+                        <img
+                           class="gallery__image"
+                           src="https://devplus.edu.vn/assets/images/devplus/4.png"
+                           alt=""
+                        />
+                     </a>
+                  </div>
+               </div>
+
+               <div class="gallery_img-outside-box">
+                  <div class="gallery__img-box">
+                     <a
+                        class="gallery__image-popup"
+                        href="https://devplus.edu.vn/assets/images/devplus/5.png"
+                     >
+                        <img
+                           class="gallery__image"
+                           src="https://devplus.edu.vn/assets/images/devplus/5.png"
+                           alt=""
+                        />
+                     </a>
+                  </div>
+               </div>
+
+               <div class="gallery_img-outside-box">
+                  <div class="gallery__img-box">
+                     <a
+                        class="gallery__image-popup"
+                        href="https://devplus.edu.vn/assets/images/devplus/6.png"
+                     >
+                        <img
+                           class="gallery__image"
+                           src="https://devplus.edu.vn/assets/images/devplus/6.png"
+                           alt=""
+                        />
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="right-navbar__map">
+               <img
+                  class="map__img"
+                  src="https://devplus.edu.vn/assets/images/map.png"
+                  alt="map-img"
+               />
+            </div>
+
+            <div class="right-navbar__contact">
+               <ul class="contact__social">
+                  <li>
+                     <a
+                        href="https://www.facebook.com/Devplusprogramme"
+                        target="_blank"
+                        ><i class="fa fa-facebook"></i
+                     ></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <!-- right-navbar -->
+      </div>
+      <!-- Header Section end. -->
+
+      <div class="body-test"></div>
+      <footer id="footer__container" class="footer__container">
+         <div class="footer-top">
+            <div class="footer-top__container">
+               <div class="footer-top__row">
+                  <div class="footer-top__content-box">
+                     <h4 class="content-box__title">
+                        DEVELOP THE SKILLS TO MOVE FAST AND STAY AHEAD.
+                     </h4>
+                     <ul class="content-box__sidemap">
+                        <li>
+                           Devplus is not a training center, it’s battle campus
+                           for you to level up your skillsets and ready to
+                           onboard any projects in our “kindest” companies
+                           listing
+                        </li>
+                     </ul>
+                  </div>
+                  <div
+                     class="footer-top__content-box footer-top__content-box--had-spacing"
+                  >
+                     <h4 class="content-box__title">For Devplus</h4>
+                     <ul class="content-box__sidemap">
+                        <li>
+                           <a
+                              class="content-box--had-hover"
+                              href="https:/my.devplus.asia"
+                              target="_blank"
+                              >Training space</a
+                           >
+                        </li>
+                        <li>
+                           <a
+                              class="content-box--had-hover"
+                              href="https://www.facebook.com/Devplusprogramme"
+                              target="_blank"
+                              >Alumni network</a
+                           >
+                        </li>
+                        <li>
+                           <a
+                              class="content-box--had-hover"
+                              href="https://conext.asia/"
+                              target="_blank"
+                              >Connect with experts</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+                  <div
+                     class="footer-top__content-box footer-top__content-box--had-spacing"
+                  >
+                     <h4 class="content-box__title">Our campus</h4>
+                     <ul class="content-box__sidemap">
+                        <li>
+                           <a class="content-box--had-hover"
+                              >One plus (+) Programing foundation</a
+                           >
+                        </li>
+                        <li>
+                           <a class="content-box--had-hover"
+                              >Two plus (++) Skill up and onboard</a
+                           >
+                        </li>
+                        <li>
+                           <a class="content-box--had-hover"
+                              >Three plus (+++) Become a senior</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div
+                     class="footer-top__content-box footer-top__content-box--no-margin"
+                  >
+                     <h4 class="content-box__title">Address</h4>
+                     <ul
+                        class="content-box__sidemap content-box__sidemap--had-adress"
+                     >
+                        <li>
+                           <img
+                              class="content-box__img"
+                              src="./asset/fonts/icons/location.png"
+                              alt=""
+                           />
+                           <div class="content-box__content">
+                              116 - 118 Đường Mai Thúc Lân, Mỹ An, Ngũ Hành Sơn,
+                              Đà Nẵng
+                           </div>
+                        </li>
+                        <li>
+                           <img
+                              class="content-box__img"
+                              src="./asset/fonts/icons/call.png"
+                              alt=""
+                           />
+                           <div class="content-box__content">
+                              <a href="tel:0368492885">(+84) 368492885</a>
+                           </div>
+                        </li>
+                        <li class="li--un-margin">
+                           <img
+                              class="content-box__img"
+                              src="./asset/fonts/icons/mail.png"
+                              alt=""
+                           />
+                           <div class="content-box__content">
+                              <a href="mailto:Hello@devplus.edu.vn"
+                                 >Hello@devplus.edu.vn</a
+                              >
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer-bottom">
+            <div class="footer-bottom__container">
+               <div class="footer-bottom-content">
+                  <div class="logo-box">
+                     <a class=""
+                        ><img
+                           class="logo-box-img"
+                           src="https://devplus.edu.vn/assets/images/devplus/Artboard_2.png"
+                           alt=""
+                     /></a>
+                  </div>
+                  <div class="center-box"></div>
+                  <div class="social-box">
+                     <ul class="footer-social">
+                        <li>
+                           <a
+                              target="_blank"
+                              href="https://www.facebook.com/Devplusprogramme"
+                              ><i class="fa fa-facebook"></i
+                           ></a>
+                        </li>
+                        <li>Facebook</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <a href="#" id="scroll" style="display: none">
+         <ion-icon class="scroll-icon" name="chevron-up-outline"></ion-icon>
+      </a>
+      <!-- headers import -->
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+
+      <script src="./asset/js/main.js"></script>
+      <script
+         src="https://kit.fontawesome.com/548bf649b2.js"
+         crossorigin="anonymous"
+      ></script>
+      <!-- footer import -->
+      <script
+         src="https://kit.fontawesome.com/548bf649b2.js"
+         crossorigin="anonymous"
+      ></script>
+   </body>
+</html>

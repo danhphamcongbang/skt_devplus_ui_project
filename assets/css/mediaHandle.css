@@ -1,0 +1,198 @@
+/* ------------------Table of Contents--------------------
+1. header section responsive
+2. footer section responsive
+ */
+
+/* 1.------------1. header section responsive------------ */
+@media (max-width: 1400px) {
+   .menu-header-section {
+      --menu-header-width: 1140px;
+      --sidebox-width: 190px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .menu-header-section {
+      --menu-header-width: 960px;
+      --sidebox-width: 159.99px;
+      font-size: 14px;
+   }
+   .area-main-menu {
+      font-size: 14px;
+      padding: 0 14px 0 22px;
+   }
+   .main-menu__item {
+      padding-right: 18px;
+      margin-right: 27px;
+   }
+}
+
+@media (max-width: 990px) {
+   .menu-header-area {
+      height: 90px;
+   }
+   .menu-header-section {
+      --menu-header-width: 690px;
+      --sidebox-width: 209.7px;
+   }
+
+   .menu-sidebox {
+      width: var(--sidebox-width);
+      padding: 0;
+   }
+   .menu-side-right {
+      flex: 1;
+   }
+   .area-main-menu {
+      display: none;
+   }
+   .expand-menu {
+      display: none;
+   }
+   .expand-menu-mobile {
+      display: flex;
+   }
+}
+
+@media (max-width: 768px) {
+   .menu-header-section {
+      --menu-header-width: 510px;
+      --sidebox-width: 209.7px;
+   }
+}
+
+@media (max-width: 550px) {
+   .menu-header-section {
+      --menu-header-width: 100%;
+      --sidebox-width: 209.7px;
+   }
+   .menu-header-container {
+      padding: 15px;
+   }
+}
+/* 1.------------1. header section responsive------------ */
+
+/* 2.------------2. footer section responsive------------ */
+
+@media (max-width: 1440px) {
+   .footer__container {
+      --footer-container-max-width: 1270px;
+   }
+   .footer-top__container {
+      max-width: var(--footer-container-max-width);
+      width: 100%;
+   }
+   .footer-bottom__container {
+      max-width: var(--footer-container-max-width);
+   }
+}
+@media (max-width: 1400px) {
+   .footer__container {
+      --footer-container-max-width: 1140px;
+   }
+   .footer-top__container {
+      max-width: var(--footer-container-max-width);
+      width: 100%;
+   }
+   .footer-bottom__container {
+      max-width: var(--footer-container-max-width);
+   }
+}
+@media (max-width: 1366px) {
+   .footer__container {
+      --footer-container-max-width: 1170px;
+   }
+   .footer-top__container {
+      max-width: var(--footer-container-max-width);
+      width: 100%;
+   }
+   .footer-bottom__container {
+      max-width: var(--footer-container-max-width);
+   }
+}
+
+@media (max-width: 1200px) {
+   .footer__container {
+      --footer-container-max-width: 960px;
+   }
+   .footer-top__container {
+      max-width: var(--footer-container-max-width);
+   }
+   .footer-bottom__container {
+      max-width: var(--footer-container-max-width);
+   }
+}
+
+@media (max-width: 992px) {
+   .footer__container {
+      --footer-container-max-width: 720px;
+   }
+   .footer-top__container {
+      max-width: var(--footer-container-max-width);
+   }
+   .footer-top {
+      padding: 190px 0 60px;
+   }
+
+   .footer-top__row {
+      display: block;
+   }
+   .footer-top__content-box {
+      width: auto;
+      height: auto;
+      margin-bottom: 50px;
+   }
+   .footer-top__content-box--no-margin {
+      margin-bottom: 0px !important;
+   }
+
+   .content-box__title {
+      margin-bottom: 20px;
+   }
+   .li--un-margin {
+      margin-bottom: 0px !important;
+   }
+   .footer-bottom__container {
+      max-width: var(--footer-container-max-width);
+   }
+   .footer-bottom-content {
+      display: block;
+   }
+   .center-box {
+      flex: none;
+   }
+   .logo-box {
+      margin-bottom: 40px;
+   }
+}
+
+@media (max-width: 768px) {
+   .footer__container {
+      --footer-container-max-width: 540px;
+   }
+   .footer-top__container {
+      max-width: var(--footer-container-max-width);
+   }
+   .content-box__title {
+      font-size: 16px;
+   }
+   .footer-bottom__container {
+      max-width: var(--footer-container-max-width);
+   }
+   .footer-top {
+      padding: 64px 0;
+   }
+}
+@media (max-width: 576px) {
+   .footer__container {
+      --footer-container-max-width: 540px;
+   }
+   .footer-top__container {
+      max-width: var(--footer-container-max-width);
+   }
+   .footer-bottom__container {
+      max-width: var(--footer-container-max-width);
+   }
+}
+
+/* 2.------------2. footer section responsive------------ */
