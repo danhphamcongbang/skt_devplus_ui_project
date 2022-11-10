@@ -7,8 +7,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900');
 
+/*
+    I. Our main campus
+    II.Admission for 2021
+*/
 
 
+/*    
+     I. Our main campus
+ */
 .main-campus {
     display: flex;
     justify-content: center;
@@ -161,8 +168,9 @@ h3.main-campus-row__content-part-title{
 
 
 
-/* option2 */
-
+/* 
+    II.Admission for 2021
+*/
 .Admission{
     font-size: 15px;
     color: #505050;
