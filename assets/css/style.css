@@ -737,7 +737,7 @@ a.Admission-content__btn--style {
    padding: 30px 50px;
    width: 500px;
    right: -500px;
-   z-index: 999999;
+   z-index: 999;
    text-align: center;
    transition: all 0.3s ease;
 }

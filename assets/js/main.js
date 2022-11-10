@@ -24,7 +24,7 @@ var rightNavbar = document.getElementById("right-navbar");
 function showMenu() {
    rightNavbar.classList.add("active-right-navbar");
 }
-function hide() {
+function hideMenu() {
    rightNavbar.classList.remove("active-right-navbar");
 }
 //Mobile Sub menu handle
@@ -88,3 +88,31 @@ $(document).ready(function () {
       return false;
    });
 });
+
+//aos handle
+AOS.init({
+   once: true,
+   duration: 2000,
+});
+
+//owl testimonial - phuongle
+$('.owl-carousel').owlCarousel({
+   items:2,
+   lazyLoad:true,
+   loop:true,
+   margin:10,
+   autoplay:true,
+   autoplayTimeout:8000,
+   autoplayHoverPause:true,
+   responsive:{
+   0:{
+       items:1,
+       nav:true
+   },
+   768:{
+       items:2,
+       nav:true,
+       loop:true
+   }
+   }
+ });
