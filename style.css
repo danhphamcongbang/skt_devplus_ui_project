@@ -76,10 +76,6 @@ h6 {
 .menu-header-container {
    position: relative;
 }
-a.main-menu__content {
-   text-decoration: none;
-   color: #111111;
-}
 
 /* sticky */
 div.sticky {
@@ -1157,10 +1153,7 @@ ul.nav-menu-mobile {
    z-index: 9;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-a.menu-mobile-item-pointer {
-   text-decoration: none;
-   color: #111111;
-}
+
 .menu-mobile-item-pointer--home {
    color: #226fb7;
 }
