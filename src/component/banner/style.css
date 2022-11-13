@@ -1,0 +1,193 @@
+.banner.style {
+   padding: 125px 0 425px;
+   background: url(../../../assets/images/Devplus_missions.png);
+   background-size: cover;
+   background-position: center;
+}
+.banner.style .banner-content {
+   max-width: 750px;
+   margin: 0 auto;
+}
+.banner.style .banner-content .banner-title {
+   font-size: 57px;
+   margin-bottom: 23px;
+}
+.banner.style .banner-content .desc {
+   font-size: 21px;
+   line-height: 30px;
+   font-family: "Rubik", sans-serif;
+   color: #505050;
+}
+.capitalize {
+   text-transform: capitalize !important;
+}
+h1.banner-title {
+   font-size: 70px;
+   font-weight: 700;
+   font-family: "Nunito", sans-serif;
+   color: #111111;
+   margin: 0 0 26px;
+   line-height: 1.2;
+}
+
+.readon {
+   outline: none;
+   padding: 12px 40px;
+   border: 1px solid #226fb7;
+   border-radius: 30px;
+   display: inline-block;
+   text-transform: uppercase;
+   font-size: 16px;
+   font-family: "Rubik", sans-serif;
+   font-weight: 700;
+   color: #111111;
+   background: #f3f8f9;
+}
+.readon.banner-style {
+   color: #ffffff;
+   background: #226fb7;
+   padding: 16px 58px;
+}
+.readon.banner-style-custom {
+   border: 1px solid #ff5421;
+   color: #ffffff;
+   background: #ff5421;
+   padding: 16px 58px;
+}
+.readon.banner-style-custom:hover {
+   background: #ff914d;
+}
+.readon.banner-style:hover {
+   background: #1e95ba;
+}
+a.banner-style-custom {
+   color: #226fb7;
+   transition: all 0.3s ease;
+   text-decoration: none !important;
+   outline: none !important;
+}
+.banner-btn {
+   margin: 30px;
+}
+.about.style1 .notice-bord.style1 {
+   margin-top: -60px;
+   padding: -4px 30px 0px;
+}
+
+.about.style1 .notice-bord.style1 .title-2 {
+   background: #226fb7;
+   font-size: 20px;
+   text-transform: uppercase;
+   padding: 18px 25px;
+   text-align: center;
+   font-weight: 600;
+   color: #ffffff;
+   margin-bottom: 10px;
+}
+.about.style1 .notice-bord.style1 li {
+   position: relative;
+   background: #e7f4f6;
+   margin-bottom: 19px;
+   border-radius: 3px;
+   padding: 16px;
+   padding-left: 0 !important;
+   overflow: hidden;
+}
+.about.style1 .notice-bord.style1 li .date {
+   position: absolute;
+   left: 20px;
+   top: 50%;
+   transform: translateY(-50%);
+   text-align: center;
+   color: #226fb7;
+   border-right: 1px solid #226fb7;
+   padding-right: 10px;
+   font-weight: 600;
+   width: 60px;
+}
+.about.style1 .notice-bord.style1 li .date span {
+   font-size: 22px;
+   display: block;
+}
+.about.style1 .about-part .desc {
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: 500;
+
+   color: #505050;
+}
+.about.style1 .notice-bord.style1 li .desc {
+   padding-left: 95px;
+   font-weight: 500;
+   font-size: 18px;
+   color: #505050;
+}
+h2.about.title-2 {
+   font-size: 26px;
+   font-weight: 700;
+   color: #111111;
+   margin: 0 0 26px;
+   line-height: 1.2;
+}
+.col-lg-4.order-last {
+   padding: 0px 30px 30px;
+}
+.col-lg-8.about-dev {
+   padding: 0px 30px 60px;
+}
+
+@media only screen and (max-width: 992px) {
+   .row.about-row {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .about.style1 .about-part {
+      margin-top: 20px !important;
+      padding: 0px 30px 0px;
+   }
+}
+
+@media only screen and (max-width: 991px) {
+   .banner.style .banner-content .banner-title {
+      font-size: 47px;
+   }
+}
+@media only screen and (max-width: 767px) {
+   .banner.style .banner-content .banner-title {
+      font-size: 35px;
+   }
+}
+
+.about.style1 .about-part {
+   background: #e7f4f6;
+   padding: 90px 80px 70px;
+   border-radius: 5px;
+   margin-top: -60px;
+}
+.sec-title .sub-title.primary {
+   color: #226fb7;
+}
+.sec-title .sub-title {
+   font-size: 18px;
+   line-height: 28px;
+   font-weight: 500;
+   text-transform: uppercase;
+   margin-bottom: 8px;
+}
+h3.about.title-h3 {
+   font-size: 36px;
+   font-weight: 700;
+   font-family: "Nunito", sans-serif;
+   color: #111111;
+   margin: 0 0 26px;
+   line-height: 1.2;
+}
+
+ul.item {
+   list-style: outside none none;
+   margin: 0;
+   padding: 0;
+}

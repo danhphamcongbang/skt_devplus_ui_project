@@ -1,0 +1,318 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+* {
+   margin: 0;
+   padding: 0;
+   font: inherit;
+}
+body {
+   line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+   max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+   outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   overflow-wrap: break-word;
+}
+
+.main-banner-section {
+   width: 100%;
+   font-family: "Rubik", sans-serif;
+}
+
+.main-banner__content {
+   width: 100%;
+   padding: 125px 0 425px 0;
+   background: url(../../../assets/images/Devplus_missions.png);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main-banner__container {
+   width: 100%;
+   max-width: 1270px;
+   padding: 0 15px;
+}
+.main-banner__content-box {
+   max-width: 750px;
+   margin: 0 auto;
+}
+.content-box__title {
+   font-family: "Nunito", sans-serif;
+   font-size: 55px;
+   margin-bottom: 16px;
+   text-transform: capitalize;
+   font-weight: 700;
+   line-height: 1.2;
+   text-align: center;
+}
+.content-box__content {
+   color: #505050;
+   font-size: 20px;
+   line-height: 30px;
+   margin-bottom: 35px;
+   text-align: center;
+   font-weight: 400;
+   visibility: visible;
+   animation-duration: 3000ms;
+   animation-delay: 300ms;
+   animation-name: fadeInRight;
+}
+.wow {
+   visibility: visible;
+   animation-duration: 3000ms;
+   animation-delay: 300ms;
+   animation-name: fadeInRight;
+}
+.content-box__more-btn {
+   text-align: center;
+}
+.more-btn {
+   border: 1px solid #ff5421;
+   color: #ffffff;
+   background: #ff5421;
+   padding: 16px 58px;
+   border-radius: 30px;
+   display: inline-block;
+   text-transform: uppercase;
+   font-size: 16px;
+   font-family: "Rubik", sans-serif;
+   font-weight: 700;
+   text-decoration: none;
+   line-height: 26px;
+}
+
+/* about section */
+
+.about-section {
+   width: 100%;
+   font-family: "Rubik", sans-serif;
+   --about-section-container-max-width: 1270px;
+   --about-section-container-width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 100px;
+}
+
+.about-section__container {
+   width: var(--about-section-container-width);
+   max-width: var(--about-section-container-max-width);
+   display: flex;
+}
+.about-section__row {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: row-reverse;
+}
+.row__road {
+   width: calc(var(--about-section-container-max-width) / 3);
+   position: relative;
+   padding: 0 15px;
+}
+.road__box {
+   margin-top: -60px;
+}
+.road__title {
+   font-family: "Nunito", sans-serif;
+   background: #226fb7;
+   font-size: 20px;
+   text-transform: uppercase;
+   padding: 18px 25px;
+   text-align: center;
+   font-weight: 600;
+   color: #ffffff;
+   margin-bottom: 10px;
+   line-height: 24px;
+}
+.road__list-items {
+   list-style: none;
+}
+.road__item {
+   position: relative;
+   background: #e7f4f6;
+   margin-bottom: 12px;
+   border-radius: 3px;
+   padding: 20px;
+   overflow: hidden;
+   display: flex;
+}
+.road-item__date {
+   font-family: "Nunito", sans-serif;
+   font-size: 22px;
+   position: relative;
+   text-align: center;
+   color: #226fb7;
+   border-right: 1px solid #226fb7;
+   padding-right: 10px;
+   font-weight: 600;
+   height: 26px;
+   width: 60px;
+   transform: translateY(-2px);
+}
+.road-item__desc {
+   font-size: 15px;
+   font-family: "Rubik", sans-serif;
+   color: #505050;
+   padding-left: 15px;
+   font-weight: 500;
+   transform: translateY(2px);
+}
+
+/* about section */
+
+.row__about-devplus {
+   width: calc(var(--about-section-container-max-width) * 2 / 3);
+   position: relative;
+   padding: 0 50px 0 15px;
+}
+.about-devplus__box {
+   margin-top: -60px;
+   padding: 60px 60px 70px 60px;
+   background: #e7f4f6;
+   border-radius: 5px;
+}
+.about-devplus__content {
+   margin-bottom: 40px;
+}
+.about-devplus__title {
+   color: #226fb7;
+   font-size: 18px;
+   line-height: 28px;
+   font-weight: 500;
+   text-transform: uppercase;
+   margin-bottom: 8px;
+}
+.about-devplus__main-content {
+   font-size: 36px;
+   font-family: "Nunito", sans-serif;
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+   color: #111111;
+   line-height: 43.2px;
+}
+.about-devplus__desc {
+   font-size: 18px;
+   color: #505050;
+   line-height: 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+   .main-banner__container {
+      max-width: 1270px;
+   }
+   .about-section {
+      --about-section-container-max-width: 1270px;
+   }
+}
+@media (min-width: 1400px) {
+   .main-banner__container {
+      max-width: 1320px;
+   }
+   .about-section {
+      --about-section-container-max-width: 1320px;
+   }
+}
+@media (min-width: 1200px) {
+   .main-banner__container {
+      max-width: 1140px;
+   }
+   .about-section {
+      --about-section-container-max-width: 1140px;
+   }
+}
+
+@media only screen and (max-width: 1366px) {
+   .main-banner__container {
+      max-width: 1170px;
+   }
+   .about-section {
+      --about-section-container-max-width: 1170px;
+   }
+}
+@media only screen and (max-width: 1199px) {
+   .main-banner__container {
+      max-width: 960px;
+   }
+   .about-section {
+      --about-section-container-max-width: 960px;
+   }
+   .content-box__title {
+      font-size: 45px;
+      line-height: 54px;
+   }
+}
+@media only screen and (max-width: 991px) {
+   .about-section {
+      margin-bottom: 70px;
+   }
+   .main-banner__container {
+      max-width: 720px;
+   }
+   .about-section {
+      --about-section-container-max-width: 720px;
+   }
+   .content-box__title {
+      font-size: 40px;
+      line-height: 48px;
+   }
+   .about-section__row {
+      display: block;
+      flex-direction: column;
+   }
+   .row__road {
+      width: 100%;
+   }
+   .road__box {
+      margin-top: 70px;
+   }
+   .row__about-devplus {
+      width: 100%;
+      padding: 0 15px;
+   }
+   .about-devplus__box {
+      margin-top: 70px;
+   }
+   .road__item {
+      padding: 30px;
+   }
+   .about-devplus__main-content {
+      font-size: 30px;
+      line-height: 36px;
+   }
+}
+@media only screen and (max-width: 767px) {
+   .main-banner__container {
+      max-width: 540px;
+   }
+   .content-box__title {
+      font-size: 35px;
+      line-height: 42px;
+   }
+   .about-section {
+      --about-section-container-max-width: 540px;
+   }
+}
